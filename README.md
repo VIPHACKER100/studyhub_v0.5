@@ -65,7 +65,7 @@ A modern, full-featured web platform for students to share and access educationa
 ### 1. Clone or navigate to the project directory
 
 ```powershell
-cd c:\Users\Aryan\Desktop\studyhub_v0.5
+cd studyhub_v0.5
 ```
 
 ### 2. Install dependencies
