@@ -23,7 +23,10 @@ You have successfully converted the Node.js backend to PHP! This allows you to h
 2.  Navigate to the `htdocs` folder.
 3.  **Delete** the default `index2.html` or `index.php` if present.
 4.  **Upload the contents** of the `public` folder to `htdocs`. 
-    - You should see `index.html`, `js`, `css`, and `api` folders inside `htdocs`.
+    - **IMPORTANT**: Do NOT upload the `public` folder itself. Open `public` on your computer, select all files (`api`, `css`, `js`, `uploads`, `index.php`), and drag them into `htdocs`.
+    - Correct path: `htdocs/index.php`
+    - Incorrect path: `htdocs/public/index.php`
+    - You should see `index.php`, `js`, `css`, and `api` folders directly inside `htdocs`.
 5.  Create a new folder named `uploads` inside `htdocs` if it doesn't just exist (it is used to store uploaded files).
     - Ensure `uploads` folder has write permissions (usually 755 or 777).
 
