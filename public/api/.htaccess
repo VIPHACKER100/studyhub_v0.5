@@ -1,0 +1,31 @@
+RewriteEngine On
+
+# Auth Routes
+RewriteRule ^auth/register/?$ auth/register.php [L]
+RewriteRule ^auth/login/?$ auth/login.php [L]
+RewriteRule ^auth/profile/?$ auth/profile.php [L]
+
+# Upload Routes
+# List and Create
+RewriteRule ^uploads/?$ uploads/index.php [L]
+# Detail
+RewriteRule ^uploads/([0-9]+)/?$ uploads/index.php?id=$1 [L]
+# Download
+RewriteRule ^uploads/([0-9]+)/download/?$ uploads/download.php?id=$1 [L]
+# Delete
+RewriteRule ^uploads/([0-9]+)/?$ uploads/index.php?id=$1 [L]
+
+
+# Admin Routes
+# Dashboard Stats
+RewriteRule ^admin/dashboard/?$ admin/dashboard.php [L]
+# Users
+RewriteRule ^admin/users/?$ admin/users.php [L]
+RewriteRule ^admin/users/([0-9]+)/?$ admin/users.php?id=$1 [L]
+# Categories
+RewriteRule ^admin/categories/?$ admin/categories.php [L]
+RewriteRule ^admin/categories/([0-9]+)/?$ admin/categories.php?id=$1 [L]
+# Pending Uploads
+RewriteRule ^admin/uploads/pending/?$ admin/pending_uploads.php [L]
+# Moderate Upload
+RewriteRule ^admin/uploads/([0-9]+)/moderate/?$ admin/moderate.php?id=$1 [L]
